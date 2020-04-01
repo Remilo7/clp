@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" name="keywords" content="android, nauka, aplikacja, google, szkoła, pomoc, uczenie, nauczanie, dydaktyka, dzieci, clp, creative lessons planner, planowanie, kreatywność, nauczyciel, język" />
+
+<meta name="viewport" content="width=480px" /> 
+
+<title>Creative Lessons Planner</title>
+
+</head>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<body>
+
+<div id="content">
+
+	<div id="form">
+
+		<p align="center"><a href="index.html"><img src="glowna.png"></a></p>
+		<hr>
+
+		<h3>Kontakt z obsługą techniczną:</h3>
+
+		<form method="post" name="myemailform" action="html-contact-form.php">
+			<p>
+				<input type="text" name="email" placeholder="Wpisz swój e-mail...">
+			</p>
+			<p>
+				<input type="text" name="name" placeholder="Podaj temat wiadomości...">
+			</p>
+			<p>
+				<textarea name="message" placeholder="Wpisz treść wiadomości..."></textarea>
+			</p>
+
+			<p>
+				<div id="szyfr">
+					<input id="6_letters_code" name="6_letters_code" type="kod" placeholder="Przepisz kod widoczny na obrazku...">
+					<div id="captcha"><img src="captcha_code_file.php?rand=<?php echo rand(); ?>" id='captchaimg' ></div>
+				</div>
+			</p>
+			<input type="submit" name='submit' value="WYŚLIJ">
+		</form>
+
+		<script language="JavaScript">
+		var frmvalidator  = new Validator("myemailform");
+		frmvalidator.addValidation("name","req","Please provide your name"); 
+		frmvalidator.addValidation("email","req","Please provide your email"); 
+		frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+		</script> 
+
+	</div>
+
+</div>
+
+</body>
+</html>
